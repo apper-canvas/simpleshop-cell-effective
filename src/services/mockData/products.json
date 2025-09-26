@@ -1,0 +1,66 @@
+[
+  {
+    "Id": 1,
+    "name": "Wireless Headphones",
+    "price": 79.99,
+    "stock": 15,
+    "lowStockThreshold": 5,
+    "createdAt": "2024-01-10T08:00:00.000Z"
+  },
+  {
+    "Id": 2,
+    "name": "Coffee Mug Set",
+    "price": 24.99,
+    "stock": 3,
+    "lowStockThreshold": 5,
+    "createdAt": "2024-01-12T10:30:00.000Z"
+  },
+  {
+    "Id": 3,
+    "name": "Bluetooth Speaker",
+    "price": 149.99,
+    "stock": 8,
+    "lowStockThreshold": 3,
+    "createdAt": "2024-01-15T14:20:00.000Z"
+  },
+  {
+    "Id": 4,
+    "name": "Laptop Stand",
+    "price": 45.50,
+    "stock": 12,
+    "lowStockThreshold": 4,
+    "createdAt": "2024-01-18T09:15:00.000Z"
+  },
+  {
+    "Id": 5,
+    "name": "Phone Case",
+    "price": 19.99,
+    "stock": 25,
+    "lowStockThreshold": 8,
+    "createdAt": "2024-01-22T11:00:00.000Z"
+  },
+  {
+    "Id": 6,
+    "name": "Desk Organizer",
+    "price": 32.99,
+    "stock": 2,
+    "lowStockThreshold": 6,
+    "createdAt": "2024-01-25T15:45:00.000Z"
+  },
+  {
+    "Id": 7,
+    "name": "USB Cable",
+    "price": 12.99,
+    "stock": 30,
+    "lowStockThreshold": 10,
+    "createdAt": "2024-01-28T13:30:00.000Z"
+  },
+  {
+    "Id": 8,
+    "name": "Notebook Set",
+    "price": 18.75,
+    "stock": 20,
+    "lowStockThreshold": 5,
+    "createdAt": "2024-02-01T16:10:00.000Z"
+  }
+]

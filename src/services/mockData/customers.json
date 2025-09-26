@@ -1,0 +1,47 @@
+[
+  {
+    "Id": 1,
+    "name": "Sarah Johnson",
+    "phone": "(555) 123-4567",
+    "email": "sarah.johnson@email.com",
+    "notes": "Regular customer, prefers eco-friendly products",
+    "createdAt": "2024-01-15T09:30:00.000Z",
+    "totalPurchases": 1450.75
+  },
+  {
+    "Id": 2,
+    "name": "Michael Chen",
+    "phone": "(555) 234-5678",
+    "email": "m.chen@email.com",
+    "notes": "Bulk buyer for office supplies",
+    "createdAt": "2024-01-20T14:15:00.000Z",
+    "totalPurchases": 2890.50
+  },
+  {
+    "Id": 3,
+    "name": "Emily Davis",
+    "phone": "(555) 345-6789",
+    "email": "emily.davis@email.com",
+    "notes": "Interested in seasonal items",
+    "createdAt": "2024-02-01T11:45:00.000Z",
+    "totalPurchases": 650.25
+  },
+  {
+    "Id": 4,
+    "name": "Robert Wilson",
+    "phone": "(555) 456-7890",
+    "email": "r.wilson@email.com",
+    "notes": "Frequent visitor, loyal customer",
+    "createdAt": "2024-02-10T16:20:00.000Z",
+    "totalPurchases": 3200.00
+  },
+  {
+    "Id": 5,
+    "name": "Lisa Rodriguez",
+    "phone": "(555) 567-8901",
+    "email": "lisa.r@email.com",
+    "notes": "Price-conscious shopper",
+    "createdAt": "2024-02-15T10:00:00.000Z",
+    "totalPurchases": 890.75
+  }
+]
