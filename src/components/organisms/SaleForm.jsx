@@ -48,7 +48,7 @@ const SaleForm = ({ isOpen, onClose, onSuccess }) => {
   }, [isOpen]);
 
   const addSaleItem = (productId) => {
-    const product = products.find(p => p.Id === parseInt(productId));
+const product = products.find(p => p.Id === parseInt(productId));
     if (!product) return;
 
     const existingItem = saleItems.find(item => item.productId === product.Id);
@@ -172,7 +172,7 @@ const SaleForm = ({ isOpen, onClose, onSuccess }) => {
             required
           >
             <option value="">Select a customer</option>
-            {customers.map(customer => (
+{customers.map(customer => (
               <option key={customer.Id} value={customer.Id}>
                 {customer.name} - {customer.email}
               </option>
@@ -195,7 +195,7 @@ const SaleForm = ({ isOpen, onClose, onSuccess }) => {
             className="block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200"
           >
             <option value="">Select a product to add</option>
-            {products.map(product => (
+{products.map(product => (
               <option key={product.Id} value={product.Id}>
                 {product.name} - ${product.price.toFixed(2)} (Stock: {product.stock})
               </option>

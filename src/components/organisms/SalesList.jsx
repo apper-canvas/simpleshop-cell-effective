@@ -51,7 +51,7 @@ const SalesList = ({ onAddSale, onViewSale }) => {
 
   useEffect(() => {
     const filtered = sales.filter(sale => {
-      const customer = customers.find(c => c.Id === sale.customerId);
+const customer = customers.find(c => c.Id === sale.customerId);
       const customerName = customer?.name?.toLowerCase() || "";
       return customerName.includes(searchTerm.toLowerCase()) ||
              sale.total.toString().includes(searchTerm);
@@ -73,7 +73,7 @@ const SalesList = ({ onAddSale, onViewSale }) => {
     }
   };
 
-  const getCustomerName = (customerId) => {
+const getCustomerName = (customerId) => {
     const customer = customers.find(c => c.Id === customerId);
     return customer?.name || "Unknown Customer";
   };

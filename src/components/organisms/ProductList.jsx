@@ -154,15 +154,15 @@ const ProductList = ({ onEditProduct, onAddProduct }) => {
                     className="hover:bg-gray-50"
                   >
                     <Table.Cell>
-                      <div className="font-medium text-gray-900">{product.name}</div>
+<div className="font-medium text-gray-900">{product.name}</div>
                     </Table.Cell>
                     <Table.Cell>
                       <span className="text-lg font-semibold text-primary-600">
-                        ${product.price.toFixed(2)}
+${product.price.toFixed(2)}
                       </span>
                     </Table.Cell>
                     <Table.Cell>
-                      <div className="flex items-center space-x-2">
+<div className="flex items-center space-x-2">
                         <span className="font-medium">{product.stock}</span>
                         {product.stock <= product.lowStockThreshold && product.stock > 0 && (
                           <ApperIcon name="AlertTriangle" className="h-4 w-4 text-warning-500" />

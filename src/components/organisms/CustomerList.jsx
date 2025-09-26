@@ -136,7 +136,7 @@ const CustomerList = ({ onEditCustomer, onViewCustomer, onAddCustomer }) => {
             <Table.Body>
               {filteredCustomers.map((customer, index) => (
                 <motion.tr
-                  key={customer.Id}
+key={customer.Id}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.05 }}
@@ -158,7 +158,7 @@ const CustomerList = ({ onEditCustomer, onViewCustomer, onAddCustomer }) => {
                   </Table.Cell>
                   <Table.Cell>
                     <span className="text-lg font-semibold text-primary-600">
-                      ${customer.totalPurchases?.toFixed(2) || "0.00"}
+${customer.totalPurchases?.toFixed(2) || "0.00"}
                     </span>
                   </Table.Cell>
                   <Table.Cell>

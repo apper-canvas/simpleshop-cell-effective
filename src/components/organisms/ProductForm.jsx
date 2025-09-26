@@ -20,7 +20,7 @@ const ProductForm = ({ isOpen, onClose, product, onSuccess }) => {
 
   useEffect(() => {
     if (product) {
-      setFormData({
+setFormData({
         name: product.name || "",
         price: product.price?.toString() || "",
         stock: product.stock?.toString() || "",
@@ -77,7 +77,7 @@ const ProductForm = ({ isOpen, onClose, product, onSuccess }) => {
       setLoading(true);
       
       const productData = {
-        name: formData.name.trim(),
+name: formData.name.trim(),
         price: parseFloat(formData.price),
         stock: parseInt(formData.stock),
         lowStockThreshold: parseInt(formData.lowStockThreshold)

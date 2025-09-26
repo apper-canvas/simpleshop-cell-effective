@@ -73,7 +73,7 @@ const Dashboard = () => {
     loadDashboardData();
   }, []);
 
-  const getCustomerName = (customerId) => {
+const getCustomerName = (customerId) => {
     const customer = customers.find(c => c.Id === customerId);
     return customer?.name || "Unknown Customer";
   };

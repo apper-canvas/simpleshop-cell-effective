@@ -20,7 +20,7 @@ const CustomerForm = ({ isOpen, onClose, customer, onSuccess }) => {
 
   useEffect(() => {
     if (customer) {
-      setFormData({
+setFormData({
         name: customer.name || "",
         email: customer.email || "",
         phone: customer.phone || "",

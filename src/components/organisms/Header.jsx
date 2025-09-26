@@ -1,8 +1,35 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import { toast } from "react-toastify";
+import { AuthContext } from "../../../App";
 import ApperIcon from "@/components/ApperIcon";
 import Button from "@/components/atoms/Button";
+
+const LogoutButton = () => {
+  const { logout } = useContext(AuthContext);
+  
+  const handleLogout = async () => {
+    try {
+      await logout();
+      toast.success('Successfully logged out');
+    } catch (error) {
+      toast.error('Failed to logout');
+    }
+  };
+
+  return (
+    <Button 
+      variant="outline" 
+      size="sm"
+      onClick={handleLogout}
+      className="flex items-center space-x-2"
+    >
+      <ApperIcon name="LogOut" className="h-4 w-4" />
+      <span>Logout</span>
+    </Button>
+  );
+};
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -55,18 +82,25 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <Button
-              variant="ghost"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2"
-            >
-              <ApperIcon 
-                name={mobileMenuOpen ? "X" : "Menu"} 
-                className="h-6 w-6" 
-              />
-            </Button>
+          {/* Right side actions */}
+          <div className="flex items-center space-x-3">
+            <div className="hidden md:block">
+              <LogoutButton />
+            </div>
+            
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <Button
+                variant="ghost"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="p-2"
+              >
+                <ApperIcon 
+                  name={mobileMenuOpen ? "X" : "Menu"} 
+                  className="h-6 w-6" 
+                />
+              </Button>
+            </div>
           </div>
         </div>
       </div>
@@ -91,6 +125,10 @@ const Header = () => {
                 <span>{item.name}</span>
               </Button>
             ))}
+            
+            <div className="pt-2 border-t border-gray-100">
+              <LogoutButton />
+            </div>
           </div>
         </motion.div>
       )}

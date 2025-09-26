@@ -69,7 +69,7 @@ const CustomerDetails = ({ isOpen, onClose, customer, onEdit }) => {
                 <ApperIcon name="User" className="h-8 w-8 text-primary-600" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-900">{customer.name}</h3>
+<h3 className="text-xl font-semibold text-gray-900">{customer.name}</h3>
                 <p className="text-secondary-600">Customer since {format(new Date(customer.createdAt), "MMMM yyyy")}</p>
               </div>
             </div>
@@ -85,7 +85,7 @@ const CustomerDetails = ({ isOpen, onClose, customer, onEdit }) => {
               <div className="space-y-2">
                 <div className="flex items-center space-x-2">
                   <ApperIcon name="Mail" className="h-4 w-4 text-secondary-400" />
-                  <span className="text-sm text-gray-900">{customer.email}</span>
+<span className="text-sm text-gray-900">{customer.email}</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <ApperIcon name="Phone" className="h-4 w-4 text-secondary-400" />
@@ -96,14 +96,14 @@ const CustomerDetails = ({ isOpen, onClose, customer, onEdit }) => {
             
             <div>
               <h4 className="text-sm font-medium text-gray-700 mb-2">Purchase Summary</h4>
-              <div className="text-2xl font-bold text-primary-600 gradient-text">
+<div className="text-2xl font-bold text-primary-600 gradient-text">
                 ${customer.totalPurchases?.toFixed(2) || "0.00"}
               </div>
               <p className="text-sm text-secondary-600">Total spent</p>
             </div>
           </div>
 
-          {customer.notes && (
+{customer.notes && (
             <div className="mt-4 pt-4 border-t border-gray-200">
               <h4 className="text-sm font-medium text-gray-700 mb-2">Notes</h4>
               <p className="text-sm text-gray-900">{customer.notes}</p>
